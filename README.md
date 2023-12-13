@@ -81,13 +81,14 @@ router.post("/", async (req, res) => {
         const synthesizer = new sdk.SpeechSynthesizer(speechConfig, null);
 
         // Here you can add your voice (eg zh-CN-XiaoxiaoNeural)
+        // You will also have to find your language (found in the language options documentations above eg zh-CN)
         // You can also add other modifiers if the voice allows you too
         // There is a list in the documentation marked below for all the modifiers but you add it like so 
         // <voice name="YOUR_TTS_VOICE" modifier="YOUR_MODIFIER_SETTING" modifier2="YOUR_MODIFIER_SETTING">
         synthesizer.speakSsmlAsync(
             `
             <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis"
-            xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="zh-CN">
+            xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="YOUR_LANGUAGE">
             <voice name="YOUR_TTS_VOICE">
                     ${text}
             </voice>
