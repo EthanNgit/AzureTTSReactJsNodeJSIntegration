@@ -211,3 +211,7 @@ You can use it like
 
 ## Step 5: Finish
 That is all it took, its really simple, and rewarding compared to other tts options avaliable given the generous free trial.
+
+https://github.com/EthanNgit/AzureTTSReactJsNodeJSIntegration/assets/105979510/ad7fd088-d78c-41ec-ab5f-a6c2dd160641
+
+
